@@ -22,6 +22,10 @@
 
 #pragma once
 
+#ifdef __clang__
+#pragma clang diagnostic ignored "-Wdefaulted-function-deleted"
+#endif
+
 #include <memory>
 #include <mutex>
 #include <string>
